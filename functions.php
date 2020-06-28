@@ -11,6 +11,21 @@ function load_scripts(){
 
 add_action('wp_enqueue_scripts', 'load_scripts');
 
+//activate featured images
 add_theme_support('post-thumbnails');
+
+
+
+//customize excerpt
+function wpdocs_custom_excerpt_length(){
+    return 50;
+}
+
+add_filter('excerpt_length', 'wpdocs_custom_excerpt_length');
+
+function wpdocs_excerpt_more(){
+    return '<a href=' . get_the_permalink() . '> Read More</a>';
+}
+add_filter('excerpt_more', 'wpdocs_excerpt_more');
 
 ?>
