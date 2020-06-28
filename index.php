@@ -8,6 +8,11 @@
                     <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     <div> <?php the_post_thumbnail(); ?> </div>
                     <div> <?php the_excerpt(); ?> </div>
+                    <div>
+                        <div> <?php the_author(); ?> <?php the_date('Y-m-d'); ?></div>
+                        <div> <?php the_tags(); ?> <div>
+                        <div> categories: <?php echo get_the_category_list(' | '); ?> <div>
+                    </div>
                 </div>
             </li>
         <?php endwhile;
