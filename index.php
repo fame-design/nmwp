@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="content-wrapper">
 <ul>
     <?php if ( have_posts() ) :
         while ( have_posts() ) : the_post(); ?>
@@ -9,4 +10,5 @@
         <?php endwhile;
     endif; ?>
 </ul>
+</div>
 <?php get_footer(); ?>

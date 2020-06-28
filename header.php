@@ -8,6 +8,10 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <header>
-        header
+<div class="page-wrapper">
+    <header class="site-header">
+        <div class="header-wrapper">
+            <div class="site-title-wrapper">site title</div>
+            <div class="nav-wrapper">nav<div>
+        </div>
     </header>

@@ -1,4 +1,8 @@
-body {
+body, .page-wrapper {
+    background-color: #b96427;
+}
+
+.content-wrapper {
     background-color: #e8ba73;
 }
 
