@@ -1,3 +1,20 @@
 body {
-    margin: 0px;
+    margin: 0px !important;
 }
+
+
+
+.postsListEntry {
+    border: dotted gray 1px;
+    margin-top: 5px;
+}
+
+
+
+/* @media screen and (max-width: 710px){
+
+}
+
+@media screen and (max-width: 800px){
+
+} */
