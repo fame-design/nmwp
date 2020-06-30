@@ -36,6 +36,19 @@ function load_navigation(){
 add_action('after_setup_theme', 'load_navigation');
 
 
+//widgets
+function add_widgets(){
+    register_sidebar(array(
+        'name' => 'My Widget',
+        'id' => 'widId',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="title">',
+        'after_title' => '</h3>'
+    ));
+}
+
+add_action('widgets_init', 'add_widgets');
 
 
 

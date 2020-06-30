@@ -11,7 +11,11 @@
 <div class="page-wrapper">
     <header class="site-header">
         <div class="header-wrapper">
-            <div class="site-title-wrapper">site title</div>
-            <div class="nav-wrapper">nav<div>
+            <div class="site-title-wrapper">
+                <a href="<?php echo home_url(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
+            </div>
+            <div class="nav-wrapper">
+                <?php wp_nav_menu(array('theme_location' => 'sticky_bar')); ?>
+            <div>
         </div>
     </header>
